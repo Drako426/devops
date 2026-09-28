@@ -1,1 +1,1 @@
-Lenguaje favorito: Python
+Lenguaje favorito: JavaScript
