@@ -19,3 +19,8 @@ Proyecto individual del curso de DevOps para practicar Git y GitHub.
 - git restore --staged: Saca un archivo de la preparación sin borrar los cambios, se ve como el archivo vuelve a quedar como "modificado".
 - git reset --soft HEAD~1: Deshace el último commit pero conserva sus cambios preparados (staged), se debe usar en commits que aún no se han subido con git push.
 - git checkout hash -- archivo: Recupera un archivo tal como estaba en un commit específico del historial. Ej: git checkout d8c90d6 -- README.md.
+
+
+## Conflicto de merge
+
+El conflicto ocurrió porque rama-python y rama-javascript salieron del mismo commit y ambas modificaron la misma línea de lenguaje.txt con valores distintos. Al fusionar primero rama-python (fast-forward) y luego rama-javascript, Git no pudo decidir automáticamente cual versión conservar. Entonces decidí combinar ambas opciones, dejando "Lenguaje favorito: Python 3.12 y JavaScript", eliminé las marcas de conflicto y confirmé el merge con un commit.
