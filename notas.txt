@@ -1,0 +1,1 @@
+Notas del proyecto: practica de comandos basicos de Git.
